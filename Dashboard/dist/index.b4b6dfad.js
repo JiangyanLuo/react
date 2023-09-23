@@ -29817,8 +29817,11 @@ function Header() {
             /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                 className: "flex flex-col justify-center",
                 children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                        children: storeNumber
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h1", {
+                        children: [
+                            "Store ",
+                            storeNumber
+                        ]
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                         className: "font-thin text-s",
