@@ -27138,10 +27138,17 @@ parcelHelpers.defineInteropFlag(exports);
 var _appCss = require("./App.css");
 var _layout = require("./layout/Layout");
 var _layoutDefault = parcelHelpers.interopDefault(_layout);
+var _header = require("./layout/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _userContext = require("../client/context/UserContext");
 var _jsxRuntime = require("react/jsx-runtime");
 function App() {
     return /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _jsxRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _layoutDefault.default), {})
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _userContext.UserProvider), {
+            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _layoutDefault.default), {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _headerDefault.default), {})
+            })
+        })
     });
 }
 _c = App;
@@ -27154,7 +27161,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"./App.css":"7eg3s","./layout/Layout":"lyoJU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7eg3s":[function() {},{}],"lyoJU":[function(require,module,exports) {
+},{"./App.css":"7eg3s","./layout/Layout":"lyoJU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./layout/Header":"6t1ww","../client/context/UserContext":"f1SeS"}],"7eg3s":[function() {},{}],"lyoJU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$36f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28997,7 +29004,7 @@ var _zoomInIconJsDefault = parcelHelpers.interopDefault(_zoomInIconJs);
 var _zoomOutIconJs = require("./ZoomOutIcon.js");
 var _zoomOutIconJsDefault = parcelHelpers.interopDefault(_zoomOutIconJs);
 
-},{"./AcademicCapIcon.js":false,"./AdjustmentsIcon.js":false,"./AnnotationIcon.js":"68HQ6","./ArchiveIcon.js":false,"./ArrowCircleDownIcon.js":false,"./ArrowCircleLeftIcon.js":false,"./ArrowCircleRightIcon.js":false,"./ArrowCircleUpIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowNarrowDownIcon.js":false,"./ArrowNarrowLeftIcon.js":false,"./ArrowNarrowRightIcon.js":false,"./ArrowNarrowUpIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmDownIcon.js":false,"./ArrowSmLeftIcon.js":false,"./ArrowSmRightIcon.js":false,"./ArrowSmUpIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowsExpandIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BadgeCheckIcon.js":false,"./BanIcon.js":false,"./BeakerIcon.js":false,"./BellIcon.js":false,"./BookOpenIcon.js":false,"./BookmarkAltIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarIcon.js":false,"./CameraIcon.js":false,"./CashIcon.js":false,"./ChartBarIcon.js":"dFscK","./ChartPieIcon.js":false,"./ChartSquareBarIcon.js":false,"./ChatAlt2Icon.js":false,"./ChatAltIcon.js":false,"./ChatIcon.js":false,"./CheckCircleIcon.js":false,"./CheckIcon.js":false,"./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpIcon.js":false,"./ChipIcon.js":false,"./ClipboardCheckIcon.js":false,"./ClipboardCopyIcon.js":false,"./ClipboardListIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":false,"./CloudDownloadIcon.js":false,"./CloudUploadIcon.js":false,"./CloudIcon.js":false,"./CodeIcon.js":false,"./CogIcon.js":false,"./CollectionIcon.js":false,"./ColorSwatchIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":false,"./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":false,"./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorClickIcon.js":false,"./DatabaseIcon.js":false,"./DesktopComputerIcon.js":false,"./DeviceMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DocumentAddIcon.js":false,"./DocumentDownloadIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentRemoveIcon.js":false,"./DocumentReportIcon.js":false,"./DocumentSearchIcon.js":false,"./DocumentTextIcon.js":false,"./DocumentIcon.js":false,"./DotsCircleHorizontalIcon.js":false,"./DotsHorizontalIcon.js":false,"./DotsVerticalIcon.js":false,"./DownloadIcon.js":false,"./DuplicateIcon.js":false,"./EmojiHappyIcon.js":false,"./EmojiSadIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationIcon.js":false,"./ExternalLinkIcon.js":false,"./EyeOffIcon.js":false,"./EyeIcon.js":false,"./FastForwardIcon.js":false,"./FilmIcon.js":false,"./FilterIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderAddIcon.js":false,"./FolderDownloadIcon.js":false,"./FolderOpenIcon.js":false,"./FolderRemoveIcon.js":false,"./FolderIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeIcon.js":false,"./HandIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeIcon.js":"edFGs","./IdentificationIcon.js":false,"./InboxInIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":false,"./KeyIcon.js":false,"./LibraryIcon.js":false,"./LightBulbIcon.js":false,"./LightningBoltIcon.js":false,"./LinkIcon.js":false,"./LocationMarkerIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./LoginIcon.js":false,"./LogoutIcon.js":false,"./MailOpenIcon.js":false,"./MailIcon.js":false,"./MapIcon.js":false,"./MenuAlt1Icon.js":false,"./MenuAlt2Icon.js":false,"./MenuAlt3Icon.js":false,"./MenuAlt4Icon.js":false,"./MenuIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicNoteIcon.js":false,"./NewspaperIcon.js":false,"./OfficeBuildingIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseIcon.js":false,"./PencilAltIcon.js":false,"./PencilIcon.js":false,"./PhoneIncomingIcon.js":false,"./PhoneMissedCallIcon.js":false,"./PhoneOutgoingIcon.js":false,"./PhoneIcon.js":false,"./PhotographIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmIcon.js":false,"./PlusIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzleIcon.js":false,"./QrcodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./ReceiptRefundIcon.js":false,"./ReceiptTaxIcon.js":false,"./RefreshIcon.js":false,"./ReplyIcon.js":false,"./RewindIcon.js":false,"./RssIcon.js":false,"./SaveAsIcon.js":false,"./SaveIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./SearchCircleIcon.js":false,"./SearchIcon.js":false,"./SelectorIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":false,"./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SortAscendingIcon.js":false,"./SortDescendingIcon.js":false,"./SparklesIcon.js":false,"./SpeakerphoneIcon.js":false,"./StarIcon.js":false,"./StatusOfflineIcon.js":false,"./StatusOnlineIcon.js":false,"./StopIcon.js":false,"./SunIcon.js":false,"./SupportIcon.js":false,"./SwitchHorizontalIcon.js":false,"./SwitchVerticalIcon.js":false,"./TableIcon.js":false,"./TagIcon.js":false,"./TemplateIcon.js":false,"./TerminalIcon.js":false,"./ThumbDownIcon.js":false,"./ThumbUpIcon.js":false,"./TicketIcon.js":false,"./TranslateIcon.js":false,"./TrashIcon.js":false,"./TrendingDownIcon.js":false,"./TrendingUpIcon.js":false,"./TruckIcon.js":false,"./UploadIcon.js":false,"./UserAddIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":false,"./UserRemoveIcon.js":false,"./UserIcon.js":false,"./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraIcon.js":false,"./ViewBoardsIcon.js":false,"./ViewGridAddIcon.js":false,"./ViewGridIcon.js":false,"./ViewListIcon.js":false,"./VolumeOffIcon.js":false,"./VolumeUpIcon.js":false,"./WifiIcon.js":false,"./XCircleIcon.js":false,"./XIcon.js":false,"./ZoomInIcon.js":false,"./ZoomOutIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"68HQ6":[function(require,module,exports) {
+},{"./AcademicCapIcon.js":false,"./AdjustmentsIcon.js":false,"./AnnotationIcon.js":"68HQ6","./ArchiveIcon.js":false,"./ArrowCircleDownIcon.js":false,"./ArrowCircleLeftIcon.js":false,"./ArrowCircleRightIcon.js":false,"./ArrowCircleUpIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowNarrowDownIcon.js":false,"./ArrowNarrowLeftIcon.js":false,"./ArrowNarrowRightIcon.js":false,"./ArrowNarrowUpIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmDownIcon.js":false,"./ArrowSmLeftIcon.js":false,"./ArrowSmRightIcon.js":false,"./ArrowSmUpIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowsExpandIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BadgeCheckIcon.js":false,"./BanIcon.js":false,"./BeakerIcon.js":false,"./BellIcon.js":"1pTPn","./BookOpenIcon.js":false,"./BookmarkAltIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarIcon.js":false,"./CameraIcon.js":false,"./CashIcon.js":false,"./ChartBarIcon.js":"dFscK","./ChartPieIcon.js":false,"./ChartSquareBarIcon.js":false,"./ChatAlt2Icon.js":false,"./ChatAltIcon.js":false,"./ChatIcon.js":false,"./CheckCircleIcon.js":false,"./CheckIcon.js":false,"./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpIcon.js":false,"./ChipIcon.js":false,"./ClipboardCheckIcon.js":false,"./ClipboardCopyIcon.js":false,"./ClipboardListIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":false,"./CloudDownloadIcon.js":false,"./CloudUploadIcon.js":false,"./CloudIcon.js":false,"./CodeIcon.js":false,"./CogIcon.js":false,"./CollectionIcon.js":false,"./ColorSwatchIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":false,"./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":false,"./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorClickIcon.js":false,"./DatabaseIcon.js":false,"./DesktopComputerIcon.js":false,"./DeviceMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DocumentAddIcon.js":false,"./DocumentDownloadIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentRemoveIcon.js":false,"./DocumentReportIcon.js":false,"./DocumentSearchIcon.js":false,"./DocumentTextIcon.js":false,"./DocumentIcon.js":false,"./DotsCircleHorizontalIcon.js":false,"./DotsHorizontalIcon.js":false,"./DotsVerticalIcon.js":false,"./DownloadIcon.js":false,"./DuplicateIcon.js":false,"./EmojiHappyIcon.js":false,"./EmojiSadIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationIcon.js":false,"./ExternalLinkIcon.js":false,"./EyeOffIcon.js":false,"./EyeIcon.js":false,"./FastForwardIcon.js":false,"./FilmIcon.js":false,"./FilterIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderAddIcon.js":false,"./FolderDownloadIcon.js":false,"./FolderOpenIcon.js":false,"./FolderRemoveIcon.js":false,"./FolderIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeIcon.js":false,"./HandIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeIcon.js":"edFGs","./IdentificationIcon.js":false,"./InboxInIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":false,"./KeyIcon.js":false,"./LibraryIcon.js":false,"./LightBulbIcon.js":false,"./LightningBoltIcon.js":false,"./LinkIcon.js":false,"./LocationMarkerIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./LoginIcon.js":false,"./LogoutIcon.js":false,"./MailOpenIcon.js":false,"./MailIcon.js":false,"./MapIcon.js":false,"./MenuAlt1Icon.js":false,"./MenuAlt2Icon.js":false,"./MenuAlt3Icon.js":false,"./MenuAlt4Icon.js":false,"./MenuIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicNoteIcon.js":false,"./NewspaperIcon.js":false,"./OfficeBuildingIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseIcon.js":false,"./PencilAltIcon.js":false,"./PencilIcon.js":false,"./PhoneIncomingIcon.js":false,"./PhoneMissedCallIcon.js":false,"./PhoneOutgoingIcon.js":false,"./PhoneIcon.js":false,"./PhotographIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmIcon.js":false,"./PlusIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzleIcon.js":false,"./QrcodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./ReceiptRefundIcon.js":false,"./ReceiptTaxIcon.js":false,"./RefreshIcon.js":false,"./ReplyIcon.js":false,"./RewindIcon.js":false,"./RssIcon.js":false,"./SaveAsIcon.js":false,"./SaveIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./SearchCircleIcon.js":false,"./SearchIcon.js":false,"./SelectorIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":false,"./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SortAscendingIcon.js":false,"./SortDescendingIcon.js":false,"./SparklesIcon.js":false,"./SpeakerphoneIcon.js":false,"./StarIcon.js":false,"./StatusOfflineIcon.js":false,"./StatusOnlineIcon.js":false,"./StopIcon.js":false,"./SunIcon.js":false,"./SupportIcon.js":false,"./SwitchHorizontalIcon.js":false,"./SwitchVerticalIcon.js":false,"./TableIcon.js":false,"./TagIcon.js":false,"./TemplateIcon.js":false,"./TerminalIcon.js":false,"./ThumbDownIcon.js":false,"./ThumbUpIcon.js":false,"./TicketIcon.js":false,"./TranslateIcon.js":false,"./TrashIcon.js":false,"./TrendingDownIcon.js":false,"./TrendingUpIcon.js":false,"./TruckIcon.js":false,"./UploadIcon.js":false,"./UserAddIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":false,"./UserRemoveIcon.js":false,"./UserIcon.js":false,"./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraIcon.js":false,"./ViewBoardsIcon.js":false,"./ViewGridAddIcon.js":false,"./ViewGridIcon.js":false,"./ViewListIcon.js":false,"./VolumeOffIcon.js":false,"./VolumeUpIcon.js":false,"./WifiIcon.js":false,"./XCircleIcon.js":false,"./XIcon.js":false,"./ZoomInIcon.js":false,"./ZoomOutIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"68HQ6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -29015,6 +29022,24 @@ function AnnotationIcon(props, svgRef) {
     }));
 }
 const ForwardRef = _react.forwardRef(AnnotationIcon);
+exports.default = ForwardRef;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1pTPn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function BellIcon(props, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 20 20",
+        fill: "currentColor",
+        "aria-hidden": "true",
+        ref: svgRef
+    }, props), /*#__PURE__*/ _react.createElement("path", {
+        d: "M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+    }));
+}
+const ForwardRef = _react.forwardRef(BellIcon);
 exports.default = ForwardRef;
 
 },{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dFscK":[function(require,module,exports) {
@@ -29769,6 +29794,94 @@ function ArrowCircleRightIcon(props, svgRef) {
 const ForwardRef = _react.forwardRef(ArrowCircleRightIcon);
 exports.default = ForwardRef;
 
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequireace3")
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6t1ww":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f78e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f78e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _userContext = require("../../client/context/UserContext");
+var _solid = require("@heroicons/react/solid");
+var _jsxRuntime = require("react/jsx-runtime");
+var _s = $RefreshSig$();
+function Header() {
+    _s();
+    const { storeNumber } = (0, _react.useContext)((0, _userContext.UserContext));
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("header", {
+        className: "flex justify-between pl-14 mt-8 w-4/5 m-auto",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "flex flex-col justify-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                        children: storeNumber
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                        className: "font-thin text-s",
+                        children: "Welcome to Your Dashboard"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "flex items-center",
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _solid.BellIcon), {
+                    className: "w-6 h-6"
+                })
+            })
+        ]
+    });
+}
+_s(Header, "FyRI+F1xGiguW6ZBrsx+umej1vA=");
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$f78e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"@heroicons/react/solid":"9Z9eb","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../client/context/UserContext":"f1SeS"}],"f1SeS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$10bc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$10bc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "UserContext", ()=>UserContext);
+parcelHelpers.export(exports, "UserProvider", ()=>UserProvider);
+var _react = require("react");
+var _jsxRuntime = require("react/jsx-runtime");
+const UserContext = /*#__PURE__*/ (0, _react.createContext)({
+    storeNumber: "001",
+    location: "Hoboken, NJ"
+});
+function UserProvider({ children }) {
+    const user = {
+        storeNumber: "502",
+        location: "Louisville, KY"
+    };
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(UserContext.Provider, {
+        value: user,
+        children: children
+    });
+}
+_c = UserProvider;
+var _c;
+$RefreshReg$(_c, "UserProvider");
+
+  $parcel$ReactRefreshHelpers$10bc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequireace3")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
