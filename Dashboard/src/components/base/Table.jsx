@@ -10,7 +10,7 @@ function Table({tableHeaders,tableData, gridLayout, dropDownOptions, dropDownSta
       <table className=" w-full m-auto relative">
         <thead className="bg-gray-50 w-full sticky top-0">
           <tr>
-            {tableHeaders.map((item) => (
+            {tableHeaders && tableHeaders.map((item) => (
               <th
                 key={item}
                 scope="col"
@@ -22,7 +22,7 @@ function Table({tableHeaders,tableData, gridLayout, dropDownOptions, dropDownSta
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200 break-words overflow-y-hidden">
-          {tableData.map(function (data, index) {
+          {tableData && tableData.map(function (data, index) {
             var reviewValues = [];
             Object.entries(data).forEach(function ([key, value]) {
               if (key === "data") {
