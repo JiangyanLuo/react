@@ -6,6 +6,7 @@ import {Routes, Route} from "react-router";
 import Home from "./pages/Home";
 import ErrorBoundary from "./base/ErrorBoundary";
 import Reviews from "./pages/Reviews";
+import Sales from "./pages/Sales";
 
 
 function App() {
@@ -26,6 +27,12 @@ function App() {
                 <ErrorBoundary>
                   <Reviews />
                 </ErrorBoundary>} />
+            <Route path="/sales"
+              element={
+                <ErrorBoundary>
+                  <Sales />
+                </ErrorBoundary>
+            } />
           </Routes>
         </Layout>
       </UserProvider>

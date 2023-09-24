@@ -29713,6 +29713,8 @@ var _errorBoundary = require("./base/ErrorBoundary");
 var _errorBoundaryDefault = parcelHelpers.interopDefault(_errorBoundary);
 var _reviews = require("./pages/Reviews");
 var _reviewsDefault = parcelHelpers.interopDefault(_reviews);
+var _sales = require("./pages/Sales");
+var _salesDefault = parcelHelpers.interopDefault(_sales);
 var _jsxRuntime = require("react/jsx-runtime");
 function App() {
     return /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _jsxRuntime.Fragment), {
@@ -29733,6 +29735,12 @@ function App() {
                                 element: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _errorBoundaryDefault.default), {
                                     children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _reviewsDefault.default), {})
                                 })
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _reactRouter.Route), {
+                                path: "/sales",
+                                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _errorBoundaryDefault.default), {
+                                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _salesDefault.default), {})
+                                })
                             })
                         ]
                     })
@@ -29751,7 +29759,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"./App.css":"7eg3s","./layout/Layout":"lyoJU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./layout/Header":"6t1ww","../client/context/UserContext":"f1SeS","react-router":"dbWyW","./pages/Home":"1MQiw","./base/ErrorBoundary":"bm8iy","./pages/Reviews":"4qovr"}],"7eg3s":[function() {},{}],"lyoJU":[function(require,module,exports) {
+},{"./App.css":"7eg3s","./layout/Layout":"lyoJU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./layout/Header":"6t1ww","../client/context/UserContext":"f1SeS","react-router":"dbWyW","./pages/Home":"1MQiw","./base/ErrorBoundary":"bm8iy","./pages/Reviews":"4qovr","./pages/Sales":"diQeq"}],"7eg3s":[function() {},{}],"lyoJU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$36f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35467,7 +35475,7 @@ var _funnelChart = require("./chart/FunnelChart");
 var _trapezoid = require("./shape/Trapezoid");
 var _global = require("./util/Global");
 
-},{"./container/Surface":false,"./container/Layer":false,"./component/Legend":false,"./component/DefaultLegendContent":false,"./component/Tooltip":"gEbNO","./component/DefaultTooltipContent":false,"./component/ResponsiveContainer":"jjAvV","./component/Cell":"cmpyN","./component/Text":false,"./component/Label":false,"./component/LabelList":false,"./component/Customized":false,"./shape/Sector":false,"./shape/Curve":false,"./shape/Rectangle":false,"./shape/Polygon":false,"./shape/Dot":false,"./shape/Cross":false,"./shape/Symbols":false,"./polar/PolarGrid":false,"./polar/PolarRadiusAxis":false,"./polar/PolarAngleAxis":false,"./polar/Pie":"4x9kw","./polar/Radar":false,"./polar/RadialBar":false,"./cartesian/Brush":false,"./cartesian/ReferenceLine":false,"./cartesian/ReferenceDot":false,"./cartesian/ReferenceArea":false,"./cartesian/CartesianAxis":false,"./cartesian/CartesianGrid":false,"./cartesian/Line":false,"./cartesian/Area":"dfpTQ","./cartesian/Bar":false,"./cartesian/Scatter":false,"./cartesian/XAxis":"doQvk","./cartesian/YAxis":"h3RMd","./cartesian/ZAxis":false,"./cartesian/ErrorBar":false,"./chart/LineChart":false,"./chart/BarChart":false,"./chart/PieChart":"4LavF","./chart/Treemap":false,"./chart/Sankey":false,"./chart/RadarChart":false,"./chart/ScatterChart":false,"./chart/AreaChart":"f9mWK","./chart/RadialBarChart":false,"./chart/ComposedChart":false,"./numberAxis/Funnel":false,"./chart/FunnelChart":false,"./shape/Trapezoid":false,"./util/Global":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ldrIX":[function(require,module,exports) {
+},{"./container/Surface":false,"./container/Layer":false,"./component/Legend":false,"./component/DefaultLegendContent":false,"./component/Tooltip":"gEbNO","./component/DefaultTooltipContent":false,"./component/ResponsiveContainer":"jjAvV","./component/Cell":"cmpyN","./component/Text":false,"./component/Label":false,"./component/LabelList":false,"./component/Customized":false,"./shape/Sector":false,"./shape/Curve":false,"./shape/Rectangle":false,"./shape/Polygon":false,"./shape/Dot":false,"./shape/Cross":false,"./shape/Symbols":false,"./polar/PolarGrid":false,"./polar/PolarRadiusAxis":false,"./polar/PolarAngleAxis":false,"./polar/Pie":"4x9kw","./polar/Radar":false,"./polar/RadialBar":false,"./cartesian/Brush":false,"./cartesian/ReferenceLine":false,"./cartesian/ReferenceDot":false,"./cartesian/ReferenceArea":false,"./cartesian/CartesianAxis":false,"./cartesian/CartesianGrid":false,"./cartesian/Line":false,"./cartesian/Area":"dfpTQ","./cartesian/Bar":"62moi","./cartesian/Scatter":false,"./cartesian/XAxis":"doQvk","./cartesian/YAxis":"h3RMd","./cartesian/ZAxis":false,"./cartesian/ErrorBar":false,"./chart/LineChart":false,"./chart/BarChart":"as5Yi","./chart/PieChart":"4LavF","./chart/Treemap":false,"./chart/Sankey":false,"./chart/RadarChart":false,"./chart/ScatterChart":false,"./chart/AreaChart":"f9mWK","./chart/RadialBarChart":false,"./chart/ComposedChart":false,"./numberAxis/Funnel":false,"./chart/FunnelChart":false,"./shape/Trapezoid":false,"./util/Global":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ldrIX":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Surface", ()=>Surface);
@@ -71808,48 +71816,39 @@ YAxis.defaultProps = {
     reversed: false
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4LavF":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"as5Yi":[function(require,module,exports) {
 /**
- * @fileOverview Pie Chart
+ * @fileOverview Bar Chart
  */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "PieChart", ()=>PieChart);
+parcelHelpers.export(exports, "BarChart", ()=>BarChart);
 var _generateCategoricalChart = require("./generateCategoricalChart");
-var _polarAngleAxis = require("../polar/PolarAngleAxis");
-var _polarRadiusAxis = require("../polar/PolarRadiusAxis");
-var _polarUtils = require("../util/PolarUtils");
-var _pie = require("../polar/Pie");
-var PieChart = (0, _generateCategoricalChart.generateCategoricalChart)({
-    chartName: "PieChart",
-    GraphicalChild: (0, _pie.Pie),
+var _bar = require("../cartesian/Bar");
+var _xaxis = require("../cartesian/XAxis");
+var _yaxis = require("../cartesian/YAxis");
+var _cartesianUtils = require("../util/CartesianUtils");
+var BarChart = (0, _generateCategoricalChart.generateCategoricalChart)({
+    chartName: "BarChart",
+    GraphicalChild: (0, _bar.Bar),
+    defaultTooltipEventType: "axis",
     validateTooltipEventTypes: [
+        "axis",
         "item"
     ],
-    defaultTooltipEventType: "item",
-    legendContent: "children",
     axisComponents: [
         {
-            axisType: "angleAxis",
-            AxisComp: (0, _polarAngleAxis.PolarAngleAxis)
+            axisType: "xAxis",
+            AxisComp: (0, _xaxis.XAxis)
         },
         {
-            axisType: "radiusAxis",
-            AxisComp: (0, _polarRadiusAxis.PolarRadiusAxis)
+            axisType: "yAxis",
+            AxisComp: (0, _yaxis.YAxis)
         }
     ],
-    formatAxisMap: (0, _polarUtils.formatAxisMap),
-    defaultProps: {
-        layout: "centric",
-        startAngle: 0,
-        endAngle: 360,
-        cx: "50%",
-        cy: "50%",
-        innerRadius: 0,
-        outerRadius: "80%"
-    }
+    formatAxisMap: (0, _cartesianUtils.formatAxisMap)
 });
 
-},{"./generateCategoricalChart":"4ZsfY","../polar/PolarAngleAxis":"7ZFSt","../polar/PolarRadiusAxis":"94jRq","../util/PolarUtils":"xMDoY","../polar/Pie":"4x9kw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4ZsfY":[function(require,module,exports) {
+},{"./generateCategoricalChart":"4ZsfY","../cartesian/Bar":"62moi","../cartesian/XAxis":"doQvk","../cartesian/YAxis":"h3RMd","../util/CartesianUtils":"j0cay","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4ZsfY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getAxisMapByAxes", ()=>getAxisMapByAxes);
@@ -74465,7 +74464,48 @@ var AccessibilityManager = /*#__PURE__*/ function() {
     return AccessibilityManager;
 }();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f9mWK":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4LavF":[function(require,module,exports) {
+/**
+ * @fileOverview Pie Chart
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PieChart", ()=>PieChart);
+var _generateCategoricalChart = require("./generateCategoricalChart");
+var _polarAngleAxis = require("../polar/PolarAngleAxis");
+var _polarRadiusAxis = require("../polar/PolarRadiusAxis");
+var _polarUtils = require("../util/PolarUtils");
+var _pie = require("../polar/Pie");
+var PieChart = (0, _generateCategoricalChart.generateCategoricalChart)({
+    chartName: "PieChart",
+    GraphicalChild: (0, _pie.Pie),
+    validateTooltipEventTypes: [
+        "item"
+    ],
+    defaultTooltipEventType: "item",
+    legendContent: "children",
+    axisComponents: [
+        {
+            axisType: "angleAxis",
+            AxisComp: (0, _polarAngleAxis.PolarAngleAxis)
+        },
+        {
+            axisType: "radiusAxis",
+            AxisComp: (0, _polarRadiusAxis.PolarRadiusAxis)
+        }
+    ],
+    formatAxisMap: (0, _polarUtils.formatAxisMap),
+    defaultProps: {
+        layout: "centric",
+        startAngle: 0,
+        endAngle: 360,
+        cx: "50%",
+        cy: "50%",
+        innerRadius: 0,
+        outerRadius: "80%"
+    }
+});
+
+},{"./generateCategoricalChart":"4ZsfY","../polar/PolarAngleAxis":"7ZFSt","../polar/PolarRadiusAxis":"94jRq","../util/PolarUtils":"xMDoY","../polar/Pie":"4x9kw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f9mWK":[function(require,module,exports) {
 /**
  * @fileOverview Area Chart
  */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -74553,6 +74593,307 @@ $RefreshReg$(_c, "PieGraph");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"recharts":"7DnXL","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequireace3")
+},{"recharts":"7DnXL","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"diQeq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b099 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b099.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _kpiGrid = require("../base/KpiGrid");
+var _kpiGridDefault = parcelHelpers.interopDefault(_kpiGrid);
+var _kpiBlock = require("../base/KpiBlock");
+var _kpiBlockDefault = parcelHelpers.interopDefault(_kpiBlock);
+var _areaGraph = require("../base/AreaGraph");
+var _areaGraphDefault = parcelHelpers.interopDefault(_areaGraph);
+var _barGraph = require("../base/BarGraph");
+var _barGraphDefault = parcelHelpers.interopDefault(_barGraph);
+var _dropDown = require("../base/DropDown");
+var _dropDownDefault = parcelHelpers.interopDefault(_dropDown);
+var _kpiFunctions = require("../../utils/functions/KpiFunctions");
+var _formattingFunctions = require("../../utils/functions/formattingFunctions");
+var _solid = require("@heroicons/react/solid");
+var _peopleSvg = require("../../assets/PeopleSvg");
+var _peopleSvgDefault = parcelHelpers.interopDefault(_peopleSvg);
+var _jsxRuntime = require("react/jsx-runtime");
+var _s = $RefreshSig$();
+function Sales() {
+    _s();
+    const [category, setCategory] = (0, _react.useState)("ADS");
+    const [salesTotals, setSalesTotals] = (0, _react.useState)({
+        ytdTotals: {
+            traffic: 0,
+            transactions: 0,
+            units: 0
+        },
+        sales: [],
+        ads: [],
+        upt: []
+    });
+    (0, _react.useEffect)(()=>{
+        fetchData("sales", setSalesTotals);
+    }, []);
+    async function fetchData(urlPath, setFunc) {
+        try {
+            let response = await fetch(`https://dashboard.mthree.academy/year/${urlPath}`);
+            let resData = await response.json();
+            setFunc(resData);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("main", {
+        className: "grid pl-14 grid-cols-2 grid-rows-2 h-screen gap-8 w-4/5 m-auto mt-4 mb-8",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _areaGraphDefault.default), {
+                data: salesTotals.sales,
+                totalValue: (0, _formattingFunctions.formatMoneyValue)((0, _kpiFunctions.getYtdValue)(salesTotals.sales)),
+                label: "Sales YTD",
+                columnsSpan: "col-span-2"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)((0, _kpiGridDefault.default), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _kpiBlockDefault.default), {
+                        svgComponent: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _solid.CheckCircleIcon), {
+                            className: "h-6 w-6"
+                        }),
+                        title: "conversion",
+                        time: "today",
+                        value: (0, _kpiFunctions.ConversionRate)(salesTotals.ytdTotals.traffic, salesTotals.ytdTotals.transactions),
+                        targetValue: 20
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _kpiBlockDefault.default), {
+                        svgComponent: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _peopleSvgDefault.default), {
+                            className: "w-6 h-6"
+                        }),
+                        title: "traffic",
+                        time: "YTD",
+                        value: (0, _formattingFunctions.formatLargeNumbers)(salesTotals.ytdTotals.traffic),
+                        targetValue: 20000
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _kpiBlockDefault.default), {
+                        svgComponent: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _solid.ShoppingBagIcon), {
+                            className: "w-6 h-6"
+                        }),
+                        title: "transactions",
+                        time: "YTD",
+                        value: (0, _formattingFunctions.formatLargeNumbers)(salesTotals.ytdTotals.transactions),
+                        targetValue: 5000
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _kpiBlockDefault.default), {
+                        svgComponent: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _solid.GiftIcon), {
+                            className: "w-6 h-6"
+                        }),
+                        title: "units",
+                        time: "YTD",
+                        value: (0, _formattingFunctions.formatLargeNumbers)(salesTotals.ytdTotals.units),
+                        targetValue: 10000
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _barGraphDefault.default), {
+                data: category === "ADS" ? salesTotals.ads : salesTotals.upt,
+                totalValue: category === "ADS" ? (0, _formattingFunctions.formatMoneyValue)((0, _kpiFunctions.getYearAds)((0, _kpiFunctions.getYtdValue)(salesTotals.sales), salesTotals.ytdTotals.transactions)) : (0, _kpiFunctions.getYearUpt)(salesTotals.ytdTotals.units, salesTotals.ytdTotals.transactions),
+                label: category === "ADS" ? "Average Dollar Sale" : "Units Per Transaction",
+                categoryToggle: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _dropDownDefault.default), {
+                    list: [
+                        "ADS",
+                        "UPT"
+                    ],
+                    parentStateSelect: category,
+                    setParentStateSelect: setCategory
+                }),
+                columnsSpan: "col-span-1"
+            })
+        ]
+    });
+}
+_s(Sales, "666UuivEewNhI4NlK/gkwrKOx/M=");
+_c = Sales;
+exports.default = Sales;
+var _c;
+$RefreshReg$(_c, "Sales");
+
+  $parcel$ReactRefreshHelpers$b099.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","../base/KpiGrid":"kLLlM","../base/KpiBlock":"5BIjr","../base/AreaGraph":"kTt31","../base/BarGraph":"38MtC","../base/DropDown":"OxuXp","../../utils/functions/KpiFunctions":"5ZuVB","../../utils/functions/formattingFunctions":"3Jkbr","@heroicons/react/solid":"9Z9eb","../../assets/PeopleSvg":"5kQ6e","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"38MtC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7eff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7eff.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _recharts = require("recharts");
+var _jsxRuntime = require("react/jsx-runtime");
+function BarGraph({ data, totalValue, label, categoryToggle, columnsSpan }) {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("section", {
+        className: `flex flex-col w-full h-full rounded-2xl shadow-xl py-2  ${columnsSpan} bg-white`,
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "flex justify-around mb-4 pt-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+                                className: "capitalize",
+                                children: totalValue
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                className: "font-thin text-xs capitalize ",
+                                children: label
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                        className: "flex space-x-4 items-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                                className: "flex items-center space-x-2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("svg", {
+                                        viewBox: "0 0 100 100",
+                                        xmlns: "http://www.w3.org/2000/svg",
+                                        className: "w-2 h-2 fill-current text-fuchsia-800",
+                                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("circle", {
+                                            cx: "50",
+                                            cy: "50",
+                                            r: "50"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        className: "capitalize text-fuchsia-800 text-xs",
+                                        children: "last year"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                                className: "flex items-center space-x-2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("svg", {
+                                        viewBox: "0 0 100 100",
+                                        xmlns: "http://www.w3.org/2000/svg",
+                                        className: "w-2 h-2 fill-current text-blue-900",
+                                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("circle", {
+                                            cx: "50",
+                                            cy: "50",
+                                            r: "50"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        className: "capitalize text-blue-900 text-xs",
+                                        children: "this year"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                        children: categoryToggle
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.ResponsiveContainer), {
+                width: "100%",
+                height: "75%",
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)((0, _recharts.BarChart), {
+                    data: data,
+                    margin: {
+                        top: 10,
+                        right: 10
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.XAxis), {
+                            dataKey: "time",
+                            interval: 0
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.YAxis), {}),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.Tooltip), {}),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.Bar), {
+                            name: "LY",
+                            dataKey: "ly",
+                            fill: "#86198F",
+                            radius: [
+                                20,
+                                20,
+                                0,
+                                0
+                            ],
+                            barSize: 15
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _recharts.Bar), {
+                            name: "YTD",
+                            dataKey: "ytd",
+                            fill: "#02155E",
+                            radius: [
+                                20,
+                                20,
+                                0,
+                                0
+                            ],
+                            barSize: 15
+                        })
+                    ]
+                })
+            })
+        ]
+    });
+}
+_c = BarGraph;
+exports.default = BarGraph;
+var _c;
+$RefreshReg$(_c, "BarGraph");
+
+  $parcel$ReactRefreshHelpers$7eff.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"recharts":"7DnXL","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kQ6e":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5591 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5591.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+function PeopleSvg() {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        height: "24px",
+        viewBox: "0 0 24 24",
+        width: "24px",
+        fill: "currentColor",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("path", {
+                d: "M0 0h24v24H0V0z",
+                fill: "none"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("path", {
+                d: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05.02.01.03.03.04.04 1.14.83 1.93 1.94 1.93 3.41V18c0 .35-.07.69-.18 1H22c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5z"
+            })
+        ]
+    });
+}
+_c = PeopleSvg;
+exports.default = PeopleSvg;
+var _c;
+$RefreshReg$(_c, "PeopleSvg");
+
+  $parcel$ReactRefreshHelpers$5591.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequireace3")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
