@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import KpiBlock from "../base/KpiBlock";
 import KpiGrid from "../base/KpiGrid";
-import AreaGraph from "../base/Table";
+import AreaGraph from "../base/AreaGraph";
 import {ConversionRate, getYtdValue} from "../../utils/functions/KpiFunctions";
 import { formatMoneyValue } from "../../utils/functions/formattingFunctions";
 import {

@@ -32621,11 +32621,13 @@ var _kpiBlock = require("../base/KpiBlock");
 var _kpiBlockDefault = parcelHelpers.interopDefault(_kpiBlock);
 var _kpiGrid = require("../base/KpiGrid");
 var _kpiGridDefault = parcelHelpers.interopDefault(_kpiGrid);
-var _table = require("../base/Table");
-var _tableDefault = parcelHelpers.interopDefault(_table);
+var _areaGraph = require("../base/AreaGraph");
+var _areaGraphDefault = parcelHelpers.interopDefault(_areaGraph);
 var _kpiFunctions = require("../../utils/functions/KpiFunctions");
 var _formattingFunctions = require("../../utils/functions/formattingFunctions");
 var _solid = require("@heroicons/react/solid");
+var _table = require("../base/Table");
+var _tableDefault = parcelHelpers.interopDefault(_table);
 var _jsxRuntime = require("react/jsx-runtime");
 var _s = $RefreshSig$();
 function Home() {
@@ -32693,7 +32695,7 @@ function Home() {
                     })
                 ]
             }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _tableDefault.default), {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _areaGraphDefault.default), {
                 data: dailyKpis.traffic,
                 totalValue: (0, _kpiFunctions.getYtdValue)(dailyKpis.traffic),
                 label: "traffic",
@@ -32735,7 +32737,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","../base/KpiBlock":"5BIjr","../base/KpiGrid":"kLLlM","../base/Table":"528rP","../../utils/functions/KpiFunctions":"5ZuVB","../../utils/functions/formattingFunctions":"3Jkbr","@heroicons/react/solid":"9Z9eb","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5BIjr":[function(require,module,exports) {
+},{"react":"21dqq","../base/KpiBlock":"5BIjr","../base/KpiGrid":"kLLlM","../base/Table":"528rP","../../utils/functions/KpiFunctions":"5ZuVB","../../utils/functions/formattingFunctions":"3Jkbr","@heroicons/react/solid":"9Z9eb","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../base/AreaGraph":"kTt31"}],"5BIjr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2f20 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34995,196 +34997,7 @@ function getYearUpt(netUnitsSold, netTransactions) {
 var _c;
 $RefreshReg$(_c, "ConversionRate");
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bm8iy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5ef8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5ef8.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _jsxRuntime = require("react/jsx-runtime");
-class ErrorBoundary extends (0, _react.Component) {
-    constructor(props){
-        super(props);
-        this.state = {
-            hasError: false
-        };
-    }
-    static getDerivedStateFromError() {
-        return {
-            hasError: true
-        };
-    }
-    componentDidCatch(error, info) {
-        console.error(error, info);
-    }
-    render() {
-        if (this.state.hasError) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-            className: "flex flex-col w-3/4 rounded-2xl shadow-xl py-2 m-auto my-4",
-            children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("section", {
-                className: "p-12 w-3/4 m-auto text-center text-red-600",
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
-                        role: "alert",
-                        className: "my-4",
-                        children: "Sorry! There is an error with our server."
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("p", {
-                        children: [
-                            "The issue should be fixed soon.",
-                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("br", {}),
-                            "Please contact your IT representative if you have any questions."
-                        ]
-                    })
-                ]
-            })
-        });
-        return this.props.children;
-    }
-}
-exports.default = ErrorBoundary;
-
-  $parcel$ReactRefreshHelpers$5ef8.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4qovr":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a409 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a409.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _areaGraph = require("../base/AreaGraph");
-var _areaGraphDefault = parcelHelpers.interopDefault(_areaGraph);
-var _pieGraph = require("../base/PieGraph");
-var _pieGraphDefault = parcelHelpers.interopDefault(_pieGraph);
-var _table = require("../base/Table");
-var _tableDefault = parcelHelpers.interopDefault(_table);
-var _dropDown = require("../base/DropDown");
-var _dropDownDefault = parcelHelpers.interopDefault(_dropDown);
-var _formattingFunctions = require("../../utils/functions/formattingFunctions");
-var _jsxRuntime = require("react/jsx-runtime");
-var _s = $RefreshSig$();
-function Reviews() {
-    _s();
-    const [category, setCategory] = (0, _react.useState)("CSAT");
-    const [demoCategory, setDemoCategory] = (0, _react.useState)("Gender");
-    const [reviews, setReviews] = (0, _react.useState)([]);
-    const [reviewStats, setReviewStats] = (0, _react.useState)({
-        totals: {
-            csat: 0,
-            nps: 0
-        },
-        demographics: {
-            gender: [],
-            age: []
-        },
-        csat: [
-            {
-                time: "",
-                ly: 0,
-                ytd: 0
-            }
-        ],
-        nps: [
-            {
-                time: "",
-                ly: 0,
-                ytd: 0
-            }
-        ]
-    });
-    (0, _react.useEffect)(()=>{
-        fetchData("stats", setReviewStats);
-        fetchData("all", setReviews);
-    }, []);
-    async function fetchData(urlPath, setFunc) {
-        try {
-            let response = await fetch(`https://dashboard.mthree.academy/reviews/${urlPath}`);
-            let resData = await response.json();
-            setFunc(resData);
-        } catch (e) {
-            console.error(e);
-        }
-    }
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("main", {
-        className: "grid pl-14 grid-cols-2 grid-rows-2 h-screen gap-8 w-4/5 m-auto mt-4 mb-8",
-        children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _areaGraphDefault.default), {
-                data: category === "CSAT" ? reviewStats.csat : reviewStats.nps,
-                totalValue: category === "CSAT" ? (0, _formattingFunctions.formatPercentage)(reviewStats.totals.csat) : (0, _formattingFunctions.formatPercentage)(reviewStats.totals.nps),
-                label: category === "CSAT" ? "Customer Satisfaction Score" : "Net Promoter Score",
-                categoryToggle: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _dropDownDefault.default), {
-                    list: [
-                        "CSAT",
-                        "NPS"
-                    ],
-                    parentStateSelect: category,
-                    setParentStateSelect: setCategory
-                }),
-                columnsSpan: "col-span-1"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _pieGraphDefault.default), {
-                data: demoCategory === "Gender" ? reviewStats.demographics.gender : reviewStats.demographics.age,
-                colors: demoCategory === "Gender" ? [
-                    "#86198F",
-                    "#02155E",
-                    "#D1D5DB"
-                ] : [
-                    "#86198F",
-                    "#02155E",
-                    "#D1D5DB",
-                    "#743BA0",
-                    "#468FCB",
-                    "#4B5563"
-                ],
-                label: "Demographics",
-                categoryToggle: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _dropDownDefault.default), {
-                    list: [
-                        "Gender",
-                        "Age"
-                    ],
-                    parentStateSelect: demoCategory,
-                    setParentStateSelect: setDemoCategory
-                }),
-                columnsSpan: "col-span-1"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _tableDefault.default), {
-                tableHeaders: [
-                    "Name",
-                    "Email",
-                    "Date",
-                    "Overall Satisfaction",
-                    "Promoter Score",
-                    "Was Helped",
-                    "Comments"
-                ],
-                tableData: reviews,
-                gridLayout: "col-span-2 place-self-center"
-            })
-        ]
-    });
-}
-_s(Reviews, "7MSPE9fc/zwUZjHXmSefxJbEghY=");
-_c = Reviews;
-exports.default = Reviews;
-var _c;
-$RefreshReg$(_c, "Reviews");
-
-  $parcel$ReactRefreshHelpers$a409.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","../base/AreaGraph":"kTt31","../base/PieGraph":"5SXF1","../base/Table":"528rP","../base/DropDown":"OxuXp","../../utils/functions/formattingFunctions":"3Jkbr","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kTt31":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kTt31":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$adc1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -74532,7 +74345,196 @@ var AreaChart = (0, _generateCategoricalChart.generateCategoricalChart)({
     formatAxisMap: (0, _cartesianUtils.formatAxisMap)
 });
 
-},{"./generateCategoricalChart":"4ZsfY","../cartesian/Area":"dfpTQ","../cartesian/XAxis":"doQvk","../cartesian/YAxis":"h3RMd","../util/CartesianUtils":"j0cay","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5SXF1":[function(require,module,exports) {
+},{"./generateCategoricalChart":"4ZsfY","../cartesian/Area":"dfpTQ","../cartesian/XAxis":"doQvk","../cartesian/YAxis":"h3RMd","../util/CartesianUtils":"j0cay","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bm8iy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5ef8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5ef8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _jsxRuntime = require("react/jsx-runtime");
+class ErrorBoundary extends (0, _react.Component) {
+    constructor(props){
+        super(props);
+        this.state = {
+            hasError: false
+        };
+    }
+    static getDerivedStateFromError() {
+        return {
+            hasError: true
+        };
+    }
+    componentDidCatch(error, info) {
+        console.error(error, info);
+    }
+    render() {
+        if (this.state.hasError) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+            className: "flex flex-col w-3/4 rounded-2xl shadow-xl py-2 m-auto my-4",
+            children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("section", {
+                className: "p-12 w-3/4 m-auto text-center text-red-600",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+                        role: "alert",
+                        className: "my-4",
+                        children: "Sorry! There is an error with our server."
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("p", {
+                        children: [
+                            "The issue should be fixed soon.",
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("br", {}),
+                            "Please contact your IT representative if you have any questions."
+                        ]
+                    })
+                ]
+            })
+        });
+        return this.props.children;
+    }
+}
+exports.default = ErrorBoundary;
+
+  $parcel$ReactRefreshHelpers$5ef8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4qovr":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a409 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a409.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _areaGraph = require("../base/AreaGraph");
+var _areaGraphDefault = parcelHelpers.interopDefault(_areaGraph);
+var _pieGraph = require("../base/PieGraph");
+var _pieGraphDefault = parcelHelpers.interopDefault(_pieGraph);
+var _table = require("../base/Table");
+var _tableDefault = parcelHelpers.interopDefault(_table);
+var _dropDown = require("../base/DropDown");
+var _dropDownDefault = parcelHelpers.interopDefault(_dropDown);
+var _formattingFunctions = require("../../utils/functions/formattingFunctions");
+var _jsxRuntime = require("react/jsx-runtime");
+var _s = $RefreshSig$();
+function Reviews() {
+    _s();
+    const [category, setCategory] = (0, _react.useState)("CSAT");
+    const [demoCategory, setDemoCategory] = (0, _react.useState)("Gender");
+    const [reviews, setReviews] = (0, _react.useState)([]);
+    const [reviewStats, setReviewStats] = (0, _react.useState)({
+        totals: {
+            csat: 0,
+            nps: 0
+        },
+        demographics: {
+            gender: [],
+            age: []
+        },
+        csat: [
+            {
+                time: "",
+                ly: 0,
+                ytd: 0
+            }
+        ],
+        nps: [
+            {
+                time: "",
+                ly: 0,
+                ytd: 0
+            }
+        ]
+    });
+    (0, _react.useEffect)(()=>{
+        fetchData("stats", setReviewStats);
+        fetchData("all", setReviews);
+    }, []);
+    async function fetchData(urlPath, setFunc) {
+        try {
+            let response = await fetch(`https://dashboard.mthree.academy/reviews/${urlPath}`);
+            let resData = await response.json();
+            setFunc(resData);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("main", {
+        className: "grid pl-14 grid-cols-2 grid-rows-2 h-screen gap-8 w-4/5 m-auto mt-4 mb-8",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _areaGraphDefault.default), {
+                data: category === "CSAT" ? reviewStats.csat : reviewStats.nps,
+                totalValue: category === "CSAT" ? (0, _formattingFunctions.formatPercentage)(reviewStats.totals.csat) : (0, _formattingFunctions.formatPercentage)(reviewStats.totals.nps),
+                label: category === "CSAT" ? "Customer Satisfaction Score" : "Net Promoter Score",
+                categoryToggle: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _dropDownDefault.default), {
+                    list: [
+                        "CSAT",
+                        "NPS"
+                    ],
+                    parentStateSelect: category,
+                    setParentStateSelect: setCategory
+                }),
+                columnsSpan: "col-span-1"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _pieGraphDefault.default), {
+                data: demoCategory === "Gender" ? reviewStats.demographics.gender : reviewStats.demographics.age,
+                colors: demoCategory === "Gender" ? [
+                    "#86198F",
+                    "#02155E",
+                    "#D1D5DB"
+                ] : [
+                    "#86198F",
+                    "#02155E",
+                    "#D1D5DB",
+                    "#743BA0",
+                    "#468FCB",
+                    "#4B5563"
+                ],
+                label: "Demographics",
+                categoryToggle: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _dropDownDefault.default), {
+                    list: [
+                        "Gender",
+                        "Age"
+                    ],
+                    parentStateSelect: demoCategory,
+                    setParentStateSelect: setDemoCategory
+                }),
+                columnsSpan: "col-span-1"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _tableDefault.default), {
+                tableHeaders: [
+                    "Name",
+                    "Email",
+                    "Date",
+                    "Overall Satisfaction",
+                    "Promoter Score",
+                    "Was Helped",
+                    "Comments"
+                ],
+                tableData: reviews,
+                gridLayout: "col-span-2 place-self-center"
+            })
+        ]
+    });
+}
+_s(Reviews, "7MSPE9fc/zwUZjHXmSefxJbEghY=");
+_c = Reviews;
+exports.default = Reviews;
+var _c;
+$RefreshReg$(_c, "Reviews");
+
+  $parcel$ReactRefreshHelpers$a409.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","../base/AreaGraph":"kTt31","../base/PieGraph":"5SXF1","../base/Table":"528rP","../base/DropDown":"OxuXp","../../utils/functions/formattingFunctions":"3Jkbr","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5SXF1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6fe3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
